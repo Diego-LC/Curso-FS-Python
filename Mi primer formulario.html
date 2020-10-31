@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css_2.css">
+</head>
+
+<body>
+    <form action="process.php" method="post">
+        <h1><strong>Mi Formulario de Registro</strong></h1>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido">
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <br>
+        <br>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <br>
+        <label for="pw_confirm">Confirmar:</label>
+        <input type="password" id="pw_confirm" name="password_confirmacion">
+        <br>
+        <br>
+
+        <label>Cumpleaños:
+            <input type="date" id="bday" name="bday">
+        </label>
+        <!--<label for="start">Cumpleaños:</label>--<input type="date" id="start" name="trip-start" value="2000-07-22" min="1960-01-01" max="2020-10-14"> copypaste de google-->
+
+        <br>
+        <br>
+        <p>Selecciona:</p>
+        <label for="masculino">Hombre</label>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+
+        <label for="femenino">Mujer</label>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+
+        <label for="otro">Otro</label>
+        <input type="radio" id="otro" name="genero" value="otro">
+
+        <p>Una breve descripción de ti:</p>
+        <textarea name="descripcion"></textarea>
+        <br>
+        <p>Lenguaje favorito:
+            <select name="lenguaje">
+                <option value="javascript">Javascript</option>
+                <option value="phyton">Phyton</option>
+            </select>
+        </p>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>

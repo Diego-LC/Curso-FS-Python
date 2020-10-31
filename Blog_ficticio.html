@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Blog Diego</title>
+    <style>
+        table {
+            width: 60%;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+        }
+        
+        #t01 tr:nth-child(even) {
+            background-color: #eee;
+        }
+        
+        #t01 tr:nth-child(odd) {
+            background-color: #fff;
+        }
+        
+        #t01 th {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <h1><b>Blog de Diego L.</b></h1>
+            <img src="https://lh3.googleusercontent.com/ogw/ADGmqu_FV4x_3Il1SaKXf2CP6JIqJfSXuh6lTkQWPgUt=s83-c-mo" alt="mi logo" width="230" height="230">
+            <p>Hola, como ya saben mi nombre es Diego.</p>
+            <p style="width: 70%;">Proin libero sapien, sagittis eget mi eu, accumsan sodales nunc. Suspendisse luctus placerat velit at vulputate. Aliquam porta posuere justo et hendrerit. Nullam at eros eleifend, sagittis arcu et, mattis urna. Cras eget orci porta, porta
+                risus porta, condimentum diam. Suspendisse vel mauris turpis. In ut elit vel tortor egestas varius sed a est. Mauris egestas arcu sed elit imperdiet euismod.</p>
+            <p style="width: 70%;">Quisque dictum fringilla justo, eu tincidunt enim maximus in. Proin pharetra, lorem vel blandit tempus, dolor felis bibendum est, vitae rutrum purus ipsum id sapien. Proin et bibendum ligula, a fermentum ante. Vivamus a risus libero. Praesent
+                mattis est lectus, nec sollicitudin ligula convallis ut. Vivamus tempor dui in ex tincidunt, eget finibus libero dignissim. Curabitur porta quam nunc, in cursus arcu egestas ornare. Aliquam tellus enim, aliquam non arcu at, dictum consequat
+                urna. Aenean ullamcorper justo ut luctus molestie. Etiam ac dictum est, eu venenatis leo. Duis laoreet facilisis mi, ac luctus libero vehicula nec. Morbi nec interdum dolor.</p>
+            <br>
+            <p>Algunos de mis familiares ficticios son:</p>
+            <table id="t01">
+                <tr>
+                    <th>Nombre</th>
+                    <th>edad</th>
+                    <th>lugar</th>
+                </tr>
+                <tr>
+                    <td>Daniel L.</td>
+                    <td>30</td>
+                    <td>Pueto Montt</td>
+                </tr>
+                <tr>
+                    <td>Javier L.</td>
+                    <td>24</td>
+                    <td>Santiago</td>
+                </tr>
+                <tr>
+                    <td>Jose L.</td>
+                    <td>36</td>
+                    <td>Concepción</td>
+                </tr>
+            </table>
+            <br>
+            <P>Algunos hobbies que me gustan son:</P>
+            <ul>
+                <li>Tenis</li>
+                <li>Ping Pong</li>
+                <li>Andar en bicicleta</li>
+                <li>Nadar</li>
+            </ul>
+            <a href="https://www.youtube.com/watch?v=afMl6J0noNk" target="_blank">Un video que hice hace tiempo en youtube</a>
+        </div>
+        <div>
+            <h3><b>Por favor contesta esta breve encuesta:</b></h3>
+            <form action="/action_page.php">
+                <P>Tu email: <input type="email"></P>
+                <input type="radio" id="si" name="si" value="si">
+                <label for="si">enviame correos</label>
+                <br>
+                <input type="radio" id="no" name="si" value="no">
+                <label for="no">no me envies correos</label>
+                <br>
+                <p>¿Cómo supiste de nosotros?</p>
+                <input type="checkbox" id="face" name="face" value="face">
+                <label for="face"> Por facebook</label><br>
+                <input type="checkbox" id="per" name="per" value="per">
+                <label for="per">Por el periódico</label><br>
+                <input type="checkbox" id="contacto" name="conta" value="conta">
+                <label for="contacto"> Un contacto</label><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

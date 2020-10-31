@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-Formulario</title>
+</head>
+
+<body>
+    <!-- div generico-->
+    <div>
+        <!-- blog-->
+        <div>
+            <h1>Michael Jordan</h1>
+            <img src="michael.jpeg" alt="Michael Jordan" width="300" height="400">
+            <p>Michael Jeffrey Jordan (Nueva York; 17 de febrero de 1963) es un exjugador de baloncesto estadounidense. En la actualidad es propietario del equipo de la NBA los Charlotte Hornets.2​ Es considerado por la mayoría de aficionados y especialistas
+                como el mejor jugador de baloncesto de todos los tiempos.3​ Se retiró definitivamente en 2003 en los Washington Wizards, tras haberlo hecho en dos ocasiones anteriores, en 1993 y 1999, después de haber jugado 13 temporadas en los Chicago
+                Bulls.
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>AÑO</th>
+                        <th>PPG</th>
+                        <th>MVP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1990-91</td>
+                        <td>31.5</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>1991-92</td>
+                        <td>30.1</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>1992-93</td>
+                        <td>32.6</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>1995-96</td>
+                        <td>30.4</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>1996-97</td>
+                        <td>29.6</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>1997-98</td>
+                        <td>28.7</td>
+                        <td>SI</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li>1984-1993 Chicago Bulls</li>
+                <li>1995-1998 Chicago Bulls</li>
+                <li>2001-2003 Washington Wizards</li>
+            </ul>
+
+            <a href="https://www.youtube.com/watch?v=txnKIFX7SP8">
+                Jordan y Nike
+            </a>
+
+        </div>
+        <!-- formulario-->
+        <div>
+            <h3>Por favor, contesta esta breve encuesta</h3>
+            <form action="askd.php">
+
+                <label for="mail">Email</label>
+                <input type="email" id="mail" name="email" value="@"><br><br>
+
+                <input type="radio" id="si" name="si" value="si">
+                <label for="si">Si, por favor envíame montones de correos</label><br>
+                <input type="radio" id="no" name="si" value="no">
+                <label for="no">No por favor, no me mandes ningun correo</label><br>
+
+                <p>¿Cómo supiste de nosotros?</p><br>
+
+                <input type="checkbox" id="face" name="face" value="face">
+                <label for="face">Facebook</label><br>
+                <input type="checkbox" id="per" name="per" value="per">
+                <label for="per">El Periódico</label><br>
+                <input type="checkbox" id="contact" name="contact" value="contact">
+                <label for="contact">Un contacto</label><br><br>
+                <input type="submit" value="Enviar...">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

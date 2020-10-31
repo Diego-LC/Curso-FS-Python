@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #b3b3b3;
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px black;
+}
+p.a {
+    background-color: #b3b3b3;
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px black;
+}
+div.pie {
+    background-color: #ffff9a;
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px black;
+}
+@media only screen and (max-width:480px){
+    p.lg {
+        display: none;
+    }
+    p.med {
+        display: none;
+    }
+} 
+@media only screen and (min-width: 481px) and (max-width:1023px) {
+    p.sm {
+        display: none;
+    }
+    p.lg {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    p.sm {
+        display: none;
+    }
+    p.med {
+        display: none;
+    }
+}

@@ -1,0 +1,78 @@
+<html>
+<body>
+	<div id='background'>
+        <div id='character' style='position:absolute; top:100px; left:450px; background-image: url("img/down1.png"); width:59px; height:86px;'></div>
+    </div>
+    <script type="text/javascript">
+	    var leftValue = 450, topValue = 100, direction = 'down';
+		var count = 0;
+    	function update(){
+    		document.getElementById("character").style.left = leftValue+"px";
+    		document.getElementById("character").style.top = topValue+"px";
+			document.getElementById("character").style.backgroundImage = "url('img/"+direction+".png')";
+    	}
+
+    	document.onkeydown = function(e){
+    		console.log(e);
+    		if(e.keyCode == 37 && leftValue >0) { // LEFT
+				count = count + 1;
+				if (count % 2 ==0){
+    			leftValue = leftValue - 10;
+				direction = 'left1';
+				console.log(count);
+				}
+				else {
+					leftValue = leftValue - 10;
+					direction = 'left2';
+					count = 1
+					console.log(count);
+				}
+    		}
+    		else if (e.keyCode == 39 && leftValue <500) { // RIGHT
+				count = count + 1;
+				if (count % 2 ==0){
+    			leftValue = leftValue + 10;
+				direction = 'right1';
+				console.log(count);
+				}
+				else {
+					leftValue = leftValue + 10;
+					direction = 'right2';
+					count = 1
+					console.log(count);
+				}   		
+    		}
+    		else if (e.keyCode == 40 && topValue <500) { // DOWN
+				count = count + 1;
+				if (count % 2 ==0){
+    			topValue = topValue + 10;
+				direction = 'down1';
+				console.log(count);
+				}
+				else {
+					topValue = topValue + 10;
+					direction = 'down2';
+					count = 1
+					console.log(count);
+				}
+    		}
+			else if (e.keyCode == 38 && topValue > 0) { // UP
+				count = count + 1;
+				if (count % 2 ==0){
+    			topValue = topValue - 10;
+				direction = 'top1';
+				console.log(count);
+				}
+				else {
+					topValue = topValue - 10;
+					direction = 'top2';
+					count = 1
+					console.log(count);
+				}
+			}
+    		// ...
+    		update();
+    	}
+    </script>
+</body>
+</html>

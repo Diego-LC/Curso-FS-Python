@@ -1,0 +1,191 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+/* -------------------------------------------------- */
+#main {
+    width: 1000px;
+    min-height: 600px;
+    margin: auto;
+    background-color: #513d45;
+    background-image: radial-gradient(#6f5964, #1a0a0e)
+}
+
+/* -----TITLE---------------------------------------------- */
+
+#title {
+    background-color: white;
+    display: inline-block;
+    width: 1000px;
+    height: 61px;
+    padding-top: 5px;
+}
+
+h1 {
+    display: inline;
+    margin-right: 380px;
+    margin-left: 20px;
+    font-family: cursive;
+}
+
+h2 {
+    display: inline;
+    margin: -20px;
+}
+
+/* -----About--------------------------------------------------------------- */
+
+#about {
+    display: inline-block;
+    margin: auto;
+}
+
+#about img {
+    margin: 25px;
+    width: 440px;
+    border: solid #c0c0c0 5px;
+    display: inline-block;
+}
+
+h3 {
+    background-color: gainsboro;
+    background-image: linear-gradient(#B3B2B5, #878693, transparent);
+    color: white;
+    padding: 13px;
+}
+
+#par {
+    background-color: gray;
+    background-image: linear-gradient(to right, #ffffff, #c7b7c4);
+    display: inline-block;
+    width: 470px;
+    min-height: 299px;
+    vertical-align: top;
+    margin-top: 25px;
+}
+
+    #par p {
+        margin: 10px;
+    }
+
+#continuelink {
+    margin: 10px;
+    color: black;
+}
+
+/* ---------------------------------------------------------------------- */
+
+#enlaces {
+    vertical-align: top;
+    width: auto;
+    display: inline-block;
+}
+
+    .lamode {
+        display: inline-block;
+        vertical-align: top;
+        background-color: gray;
+        background-image: linear-gradient(to right, #ffffff, #c7b7c4);
+        width: 300px;
+        margin-left: 25px;
+        margin-bottom: 25px;
+    }
+
+        .lamode p {
+            margin: 10px;
+            min-height: 190px;
+            text-align: justify;
+        }
+
+    #lamodeimg {
+        width: auto;
+        height: 149px;
+    }
+
+    .family {
+        display: inline-block;
+        vertical-align: top;
+        background-color: gray;
+        background-image: linear-gradient(to right, #ffffff, #c7b7c4);
+        width: 300px;
+        margin-left: 20px;
+        margin-bottom: 25px;
+    }
+
+        .family img {
+            width: auto;
+            height: 149px;
+        }
+
+        .family p {
+            text-align: justify;
+            margin: 10px;
+            min-height: 190px;
+        }
+
+    .fiveEleven {
+        display: inline-block;
+        vertical-align: top;
+        background-color: gray;
+        background-image: linear-gradient(to right, #ffffff, #c7b7c4);
+        width: 300px;
+        margin-left: 20px;
+        margin-bottom: 25px;
+    }
+
+        .fiveEleven img {
+            width: auto;
+            height: 149px;
+        }
+
+        .fiveEleven p {
+            text-align: justify;
+            margin: 10px;
+            min-height: 190px;
+        }
+
+    .icons img {
+        margin: 8px;
+        width: 40px;
+        height: 40px;
+    }
+/* ------------------------------------------------------------------ */
+    button {
+        color: white;
+        background-color: #407d61;
+        margin: 5px 10px 10px 115px;
+        font-size: 15px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+/* ---------Pie--------------------------------------------------------- */
+
+#pie {
+    background-color: white;
+}
+
+    #pie p {
+        margin-left: 38%;
+        padding: 10px;
+    }
+
+ul.link {
+    margin-left: 33%;
+    padding: 10px;
+}
+
+#pie li {
+    display: inline;
+}
+
+#pie img {
+    width: 20px;
+    height: 20px;
+}
+
+.lin {
+    color: black;
+    font-style: italic;
+}
