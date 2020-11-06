@@ -79,3 +79,23 @@ function removerRango(x,y,z){
 }
 a=removerRango([20,30,40,50,60,70],2,4);
 console.log(a);
+
+
+
+function removerRango(x, RangIni, RangFin) {
+    if (RangIni <= RangFin && RangFin >= 0 && RangIni >= 0 && RangIni <= x.length && RangFin < x.length) {
+        let newarray = [];
+        for (i = 0; i < x.length; i++) {
+            if (i < RangIni || i > RangFin) {
+                newarray.push(x[i]);
+            }
+        }
+        return newarray;
+    } 
+    else {
+        return "Revisar datos";
+    }
+}
+
+g = removerRango([20, 30, 40, 50, 60, 70], 2, 4);
+console.log(g);
