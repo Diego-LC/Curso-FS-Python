@@ -27,24 +27,31 @@ function moverAdelante(x){
     return newarr;
 }
 a=moverAdelante([1,2,3]);
-
-
 console.log(a);
-function moverAdelante(x){
-    newarr=[]
-    for (var i=1; i<x.length; i++){
-            newarr.push(x[i]);
-    }
-    newarr.push(0);
-    return newarr;
-}
-a=moverAdelante([1,2,3]);
-console.log(a);
+
 
 //Configura un array para que el resultado sean los valores en el orden contrario. Por ejemplo, 
 //returnReverso([1,2,3]) debe dar [3,2,1].
-
+function returnReverso(x){
+    newarr=[];
+    for(var i=x.length-1; i>=0; i--){
+        newarr.push(x[i]);
+    }
+    return newarr;
+}
+a=returnReverso([1,2,3]);
+console.log(a);
 
 
 //Crea una función que cambie un array repitiendo sus valores originales (manteniendo el mismo orden). 
 //Por ejemplo, repetirValores([4,”Ulysses”, 42, false]) debiera dar [4,4, “Ulysses”, “Ulysses”, 42, 42, false, false].
+function repetirValores(x){
+    newarr=[];
+    for(var i=0; i<x.length; i++){
+        newarr.push(x[i]);
+        newarr.push(x[i]);
+    }
+    return newarr;
+}
+a=repetirValores([4,"Ulysses", 42, false]);
+console.log(a);

@@ -22,7 +22,7 @@ console.log(b);
 function arr(x){
     max=x[0];
     min=x[0];
-    avg=0;
+    prom=x[0];
     for(var i=1; i<x.length; i++){
         if(x[i]>max){
             max=x[i];
@@ -30,10 +30,10 @@ function arr(x){
         if(x[i]<min){
             min=x[i];
         }
-        avg=avg + x[i];
+        prom=prom + x[i];
     }
-    avg=avg/x.length;
-    console.log(max,min,avg)
+    prom=prom/x.length;
+    console.log(max,min,avg);
 }
 arr([2,8,4,5,9,1]);
 
